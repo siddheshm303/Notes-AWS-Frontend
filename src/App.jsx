@@ -16,8 +16,7 @@ function App() {
   const isAuthenticated = auth.isAuthenticated
   const accessToken = auth.user?.access_token ?? ''
   const userEmail = auth.user?.profile?.email ?? auth.user?.profile?.sub ?? ''
-  const logoutRedirectUri =
-    import.meta.env.VITE_COGNITO_LOGOUT_URI ?? window.location.origin
+  const logoutRedirectUri ='https://main.d3afncebsfpskp.amplifyapp.com/'
 
   const handleSignIn = () => {
     auth.signinRedirect().catch((err) => {
