@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Card from './components/Card'
 import Note from './components/Note'
-import { useAuth } from "react-oidc-context";
+import { useAuth } from 'react-oidc-context'
 
 function App() {
   const auth = useAuth();
@@ -25,12 +25,10 @@ function App() {
   }
 
   const handleSignOut = () => {
-    auth
-      .signoutRedirect({ post_logout_redirect_uri: logoutRedirectUri })
-      .catch((err) => {
-        console.warn('Falling back to local sign-out', err)
-        auth.removeUser()
-      })
+    auth.signoutRedirect().catch((err) => {
+      console.warn('Falling back to local sign-out', err)
+      auth.removeUser()
+    })
   }
 
   return (
