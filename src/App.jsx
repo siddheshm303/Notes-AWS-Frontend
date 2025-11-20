@@ -16,7 +16,7 @@ function App() {
   const isAuthenticated = auth.isAuthenticated
   const accessToken = auth.user?.access_token ?? ''
   const userEmail = auth.user?.profile?.email ?? auth.user?.profile?.sub ?? ''
-  const logoutRedirectUri ='https://main.d3afncebsfpskp.amplifyapp.com/'
+  const logoutRedirectUri ='https://main.d38ejrjc1ph3il.amplifyapp.com'
 
   const handleSignIn = () => {
     auth.signinRedirect().catch((err) => {
