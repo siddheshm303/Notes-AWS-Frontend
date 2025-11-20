@@ -16,7 +16,7 @@ function App() {
   const isAuthenticated = auth.isAuthenticated
   const accessToken = auth.user?.access_token ?? ''
   const userEmail = auth.user?.profile?.email ?? auth.user?.profile?.sub ?? ''
-  const logoutRedirectUri = import.meta.env.VITE_COGNITO_REDIRECT_URI
+  const logoutRedirectUri = import.meta.env.VITE_COGNITO_REDIRECT_URI ?? window.location.origin
 
   const handleSignIn = () => {
     auth.signinRedirect().catch((err) => {
