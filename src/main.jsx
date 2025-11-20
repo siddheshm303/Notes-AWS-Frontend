@@ -6,7 +6,7 @@ import { AuthProvider } from "react-oidc-context";
 
 const authority =
   import.meta.env.VITE_COGNITO_AUTHORITY ??
-  'https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_F0PsMgsP9'
+  'https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_0nrxzkXIj'
 const clientId =
   import.meta.env.VITE_COGNITO_CLIENT_ID ?? '4g3kuo84dn211bpb9hrma9mg6d'
 const redirectUri =
