@@ -36,15 +36,10 @@ A serverless web application for managing notes with secure user authentication�
 ## ☁️ Why Serverless?
 
 **Zero Server Management** - No servers to provision, patch, or maintain
-
 **Auto-Scaling** - Automatically handles traffic spikes
-
 **Pay-per-Use** - Only pay for actual usage, not idle time
-
 **High Availability** - Built-in redundancy and fault tolerance
-
 **Fast Deployment** - Go from code to production in minutes
-
 **Cost-Effective** - This entire app runs on AWS Free Tier ($0/month)
 
 ---
